@@ -15,8 +15,9 @@ export EDITOR="vim"
 # Aliases
 alias ls="ls --color"
 alias prg="tmux new-session \; source-file ~/.dots/tmux/programming.conf;"
-alias pb=". ~/.dots/polybar/polybar.sh"
+alias pb=". ~/.dots/polybar.sh"
 alias remove-orphans='(set -x; sudo pacman -Rs $(pacman -Qdtq))'
+alias neofetch="neofetch --ascii ~/.config/neofetch/ascii"
 
 neofetch
 # Cargo
