@@ -16,7 +16,7 @@ set nocompatible
 syntax on
 set number
 set list
-" set listchars=space:·
+set listchars=space:·
 
 autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber 
@@ -36,8 +36,12 @@ Plug 'preservim/tagbar'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'Yggdroot/indentLine'
+Plug 'christoomey/vim-tmux-navigator' 
 call plug#end()
+
+" NerdTree
+let NERDTreeIgnore = [ '__pycache__', '\.pyc$', '\.o$', '\.swp',  '*\.swp',  'node_modules/' ] "
+let NERDTreeShowHidden=1
 
 " Vimwiki
 let g:vimwiki_list = [{'path': '~/.vimwiki/'}]
