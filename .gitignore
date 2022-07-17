@@ -1,4 +1,6 @@
 config/discord*
 config/pulse
+config/spotify
+config/spicetify
 *.swp
 
