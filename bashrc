@@ -17,7 +17,7 @@ alias ls="ls --color"
 alias prg="tmux new-session \; source-file ~/.config/tmux/programming.conf;"
 alias pb=". ~/.dots/polybar.sh"
 alias remove-orphans='(set -x; sudo pacman -Rs $(pacman -Qdtq))'
-alias neofetch="neofetch --ascii ~/.config/neofetch/ascii"
+alias neofetch="neofetch --ascii-colors 1 2 3 4 5 6 --ascii ~/.config/neofetch/ascii"
 
 neofetch
 # Cargo

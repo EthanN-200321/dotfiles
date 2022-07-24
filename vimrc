@@ -36,11 +36,11 @@ Plug 'preservim/tagbar'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'christoomey/vim-tmux-navigator' 
 call plug#end()
 
 " NerdTree
-let NERDTreeIgnore = [ '__pycache__', '\.pyc$', '\.o$', '\.swp',  '*\.swp',  'node_modules/' ] "
+let NERDTreeIgnore = [ '__pycache__', '\.pyc$', '\.o$', '\.swp',  '*\.swp',  'node_modules/'] "
+let NERDTreeMapOpenInTab='<C-<ENTER>>'
 let NERDTreeShowHidden=1
 
 " Vimwiki
@@ -51,13 +51,14 @@ let g:coc_node_path = '/usr/bin/node'
 
 " lightline
 set laststatus=2
-"let g:lightline = {
-"  \ 'colorscheme' : 'budgetnord',
-"  \ }
+let g:lightline = {
+  \ 'colorscheme' : 'budgetnord',
+  \ }
 
 " Keybindings
 nnoremap <F1> :<c-u>update<cr>
 nnoremap <F4> :<c-u>wq!<cr> 
+nnoremap <C-S> :<C-u>TagbarToggle<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-/> :NERDTreeFind<CR>
 
