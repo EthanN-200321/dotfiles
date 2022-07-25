@@ -5,9 +5,7 @@
 #            
 	                         
 # PS1, other env. variables
-#export PS1="\e[0;36m┌—\e[0;34m<\e[0;36m—\e[0;34m{\e[0;35m\u\e[0;34m@\e[0;36m\h\e[0;34m}\e[0;36m——\e[0;34m<\e[0;35m\w\e[0;34m>\e[0;36m—\e[0;34m\e[0;36m\e[0;34m>\n\e[0;36m└\e[0;34m> \e[0;35m$ \e[m"
-#export PS1="\e[0;36m┌—\e[0;34m<\e[0;36m—\e[0;34m{\e[0;35methan\e[0;34m@\e[0;36m\h\e[0;34m}\e[0;36m——\e[0;34m<\e[0;35m\w\e[0;34m>\e[0;36m—\e[0;34m\e[0;36m\e[0;34m>\n\e[0;36m└\e[0;34m> \e[0;35m$ \e[m"
-export PS1="\e[0;34m[\e[1;31m\u\e[0;34m] \e[1;34m\w\n\e[1;31m $ \e[1;34m\e[1;31m\e[1;35m\e[m "
+export PS1="\e[30m[\e[1;93m\u\e[0;30m] \e[1;96m\w\n \e[1;94m$ \e[1;93m\e[1;94m\e[1;95m \e[m"
 export PATH="$HOME/.programs/appimages:$PATH"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export EDITOR="vim"

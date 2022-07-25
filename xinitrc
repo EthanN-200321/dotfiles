@@ -3,6 +3,7 @@
 #   _ \ \/| || ' || |  | | | '_>/ | '
 #  <_>/\_\|_||_|_||_|  |_| |_|  \_|_.
 #                                    
+systemctl --user import-environment DISPLAY
 
 picom -b &
 slstatus &
