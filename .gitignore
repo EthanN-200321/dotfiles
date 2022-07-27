@@ -2,5 +2,6 @@ config/discord*
 config/pulse
 config/spotify
 config/spicetify
+config/font-manager
 *.swp
 
