@@ -1,6 +1,6 @@
 hi clear
 syntax reset
-let g:colors_name = "budgetnord"
+let g:colors_name = "colourscheme"
 set background=dark
 set t_Co=256
 hi Normal guifg=#fafafa ctermbg=NONE guibg=#0a0b0c gui=NONE

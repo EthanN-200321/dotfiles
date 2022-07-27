@@ -1,54 +1,44 @@
-[global]
-monitor = 0
-follow = mouse
-geometry = "300x60-20+48"
-indicate_hideen = yes
-shrink = no
-separator_height = 0
-padding = 32
-horizontal_padding = 32
-frame_width = 2
-sort = no
-idle_threshold = 120
-font = Dosis 8
-line_height = 4
-markup = full
-format = %s\n%b
-alignment = left
-show_age_threshold = 60
-word_wrap = yes
-ignore_newline = no
-stack_duplicates = false
-hide_duplicate_count = yes
-show_indicators = no
-icon_position = off
-sticky_history = yes
-history_length = 20
-browser = /usr/bin/firefox -new-tab
-always_run_script = true
-title = Dunst
-class = Dunst
+# <- this tricks vim into using syntax highlighting
 
-[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-context = ctrl+space+space
+
+[global]
+	min_icon_size = 100
+	monitor = 0
+	follow = mouse
+	enable_posix_regex = true
+	notification_limit = 5
+
+	origin = bottom-right
+	width = 400
+	height = 250
+	separator_height = 4
+
+
+	font = Dosis 12
+	markup = full
+	format = "<b>%a\n%s</b>\n%b"
+
+	icon_position = "left"
+	text_icon_padding = 6
+	icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/:/usr/share/icons/Adwaita/16x16/legacy/
+
+	browser = /usr/bin/firefox
 
 [urgency_low]
-timeout = 4
-background = #0a0b0c
-foreground = #fafafa
-frame_color = #b1ed82
+	timeout     = 4
+	background  = "#0a0b0c"
+	foreground  = "#fafafa"
+	frame_color = "#b1ed82"
 
 [urgency_normal]
-timeout = 6
-background = #0a0b0c
-foreground = #fafafa
-frame_color = #e584f0
+	timeout     = 6
+	background  = "#0a0b0c"
+	foreground  = "#fafafa"
+	frame_color = "#e584f0"
 
 [urgency_critical]
-timeout = 6
-background = #0a0b0c
-foreground = #fafafa
-frame_color = #ff66a3
+	timeout     = 6
+	background  = "#0a0b0c" 
+	foreground  = "#fafafa"
+	frame_color = "#ff66a3"
 
