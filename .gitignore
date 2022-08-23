@@ -3,5 +3,12 @@ config/pulse
 config/spotify
 config/spicetify
 config/font-manager
+config/fontconfig
+config/gtk*
+config/htop
+config/dconf
+config/mpv
+config/ranger
+
 *.swp
 

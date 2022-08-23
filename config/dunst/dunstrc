@@ -9,8 +9,8 @@
 	notification_limit = 5
 
 	origin = bottom-right
-	width = 400
-	height = 250
+	width = 340
+	height = 300
 	separator_height = 4
 
 
@@ -23,22 +23,20 @@
 	icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/:/usr/share/icons/Adwaita/16x16/legacy/
 
 	browser = /usr/bin/firefox
+	frame_color = "#13161B"
 
 [urgency_low]
 	timeout     = 4
 	background  = "#0a0b0c"
 	foreground  = "#fafafa"
-	frame_color = "#b1ed82"
 
 [urgency_normal]
 	timeout     = 6
 	background  = "#0a0b0c"
 	foreground  = "#fafafa"
-	frame_color = "#e584f0"
 
 [urgency_critical]
 	timeout     = 6
 	background  = "#0a0b0c" 
 	foreground  = "#fafafa"
-	frame_color = "#ff66a3"
 

@@ -20,8 +20,8 @@ set listchars=space:·
 
 autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber 
-set shiftwidth=4
-set tabstop=4
+set tabstop=4 shiftwidth=4 expandtab
+set hlsearch
 
 
 " Plugins
@@ -36,7 +36,9 @@ Plug 'preservim/tagbar'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
+
 
 " NerdTree
 let NERDTreeIgnore = [ '__pycache__', '\.pyc$', '\.o$', '\.swp',  '*\.swp',  'node_modules/'] "
@@ -48,6 +50,7 @@ let g:vimwiki_list = [{'path': '~/.vimwiki/'}]
 
 " coc.nvim
 let g:coc_node_path = '/usr/bin/node'
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env']
 
 " lightline
 set laststatus=2
@@ -58,9 +61,10 @@ let g:lightline = {
 " Keybindings
 nnoremap <F1> :<c-u>update<cr>
 nnoremap <F4> :<c-u>wq!<cr> 
-nnoremap <C-S> :<C-u>TagbarToggle<CR>
+nnoremap <C-S> :<c-u>TagbarToggle<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-/> :NERDTreeFind<CR>
+nnoremap \ : nohl<CR>
+
 
 inoremap <silent><expr> <TAB>
   \ pumvisible() ? coc#_select_confirm() :

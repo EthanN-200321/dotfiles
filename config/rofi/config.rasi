@@ -28,7 +28,7 @@ window {
 }
 
 entry {
-	placeholder:			"Search ";
+	placeholder:			"  Search";
 	placeholder-color:              @placeholder;
 	expand:                         true;
 	padding:                        1.5% 3%;
