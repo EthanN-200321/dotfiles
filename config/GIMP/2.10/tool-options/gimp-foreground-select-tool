@@ -1,6 +1,0 @@
-# GIMP gimp-foreground-select-tool options
-
-(foreground (color-rgb 0.98039215686274506 0.98039215686274506 0.98039215686274506))
-(background (color-rgb 0.039215686274509803 0.043137254901960784 0.047058823529411764))
-
-# end of gimp-foreground-select-tool options
